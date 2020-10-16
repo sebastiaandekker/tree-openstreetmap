@@ -1,38 +1,33 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/css/starter.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/starter.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
     <title>Bootstrap npm starter</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
-    <p>You've successfully loaded up the Bootstrap npm starter project!</p>
-    <p>If this button looks blue, you've done it.</p>
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Click me!</button>
-
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Success!</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            If you're seeing this modal after clicking the button on the page, Bootstrap's CSS and JS are both working properly.
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div>
+    <h1>Tree Map</h1>
+    <div id="mapid"></div>
 
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script type="module" src="assets/js/smoothZoom.js"></script>
     <script type="module" src="assets/js/starter.js"></script>
+    <!-- <script type="module" src="assets/js/tutorial.js"></script> -->
+    <!-- Smooth zoom UX plugin -->
+    <!-- <script type="module" src="assets/js/treejson.js"></script> -->
+    <!-- <script type="module" src="assets/js/sample-geojson.js"></script> -->
+    <!-- <script type="module" src="assets/js/geojson-tutorial.js"></script> -->
   </body>
 </html>
